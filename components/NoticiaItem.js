@@ -3,20 +3,17 @@ import { TouchableOpacity, View, StyleSheet } from "react-native";
 import MiUNQBaseText from './MiUNQBaseText';
 import MiUNQLink from './MiUNQLink';
 
-const AgendaItem = (props) => {
-    const { data, _ } = props;
-
+const NoticiaItem = (props) => {
+    const {data, _} = props
+    console.log(data);
     return (
         <TouchableOpacity>
             <View style={styles.noticia}>
-                <MiUNQBaseText>
-                    {data.item.start}
-                </MiUNQBaseText>
-                <MiUNQLink href={data.item.url}>
+                <MiUNQLink href={data.item.links[0].url}>
                     {data.item.title}
                 </MiUNQLink>
                 <MiUNQBaseText>
-                    {data.item.body}
+                    {data.item.description}
                 </MiUNQBaseText>
             </View>
         </TouchableOpacity>
@@ -32,4 +29,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default AgendaItem;
+export default NoticiaItem;

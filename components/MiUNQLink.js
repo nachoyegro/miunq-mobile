@@ -18,7 +18,7 @@ const MiUNQLink = (props) => {
 const styles = StyleSheet.create({
     baseText: {
         fontFamily: "Roboto",
-        color: "#A42339",
+        color: "#ad1233",
         fontWeight: 'bold'
     }
 });

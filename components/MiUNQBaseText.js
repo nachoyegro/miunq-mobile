@@ -12,7 +12,10 @@ const MiUNQBaseText = (props) => {
 
 const styles = StyleSheet.create({
   baseText: {
-    fontFamily: "Roboto"
+    fontFamily: "Roboto",
+    fontSize: 14,
+    fontWeight: 'normal',
+    color: '#666666'
   }
 });
 
