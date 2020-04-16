@@ -5,7 +5,6 @@ import MiUNQLink from './MiUNQLink';
 
 const NoticiaItem = (props) => {
     const {data, _} = props
-    console.log(data);
     return (
         <TouchableOpacity>
             <View style={styles.noticia}>

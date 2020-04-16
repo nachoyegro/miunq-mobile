@@ -4,26 +4,31 @@ import { TouchableOpacity, View, StyleSheet, Text } from "react-native";
 const Saldo = (props) => {
 
     return (
-        <TouchableOpacity>
-            <View style={styles.saldo}>
-                <Text style={{fontSize: 20, color: '#fff'}}>
-                    Saldo tarjeta
-                </Text>
-                <Text style={{fontSize: 30, color: '#fff', textAlign: 'right'}}>
-                    $500
-                </Text>
-            </View>
-        </TouchableOpacity>
+        <View style={styles.saldo}>
+          <TouchableOpacity>
+            <Text style={{ fontSize: 15, color: '#fff' }}>
+                Saldo tarjeta
+            </Text>
+            <Text style={{ fontSize: 30, color: '#fff'}}>
+                $500
+            </Text>
+          </TouchableOpacity>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     saldo: {
-      padding: 10,
-      backgroundColor: '#ad1233',
-      borderBottomWidth: 1,
-      borderBottomColor: '#000'
+        flex: 1,
+        padding: 20,
+        margin: 5,
+        backgroundColor: '#ad1233',
+        alignItems: 'stretch',
+        borderTopRightRadius: 10,
+        borderTopLeftRadius: 10,
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10,
     }
-  });
+});
 
 export default Saldo;
